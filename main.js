@@ -3,7 +3,7 @@ const { default: mongoose } = require('mongoose');
 const app = express();
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/datacollection",{}).then(()=>{
+mongoose.connect("mongodb://0.0.0.0:27017/datacollection",{}).then(()=>{
   console.log("mongodb connected");
 })
  app. set("view engine","ejs");

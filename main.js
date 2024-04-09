@@ -2,8 +2,7 @@ const express = require('express');
 const { default: mongoose } = require('mongoose'); 
 const app = express();
 
-
-mongoose.connect("mongodb://0.0.0.0:27017/datacollection",{}).then(()=>{
+mongoose.connect("mongodb+srv://hariprasath1k99:zmQgGVJDjJuu8m.@har.jesskwp.mongodb.net/?retryWrites=true&w=majority&appName=har").then(function() {
   console.log("mongodb connected");
 })
  app. set("view engine","ejs");
